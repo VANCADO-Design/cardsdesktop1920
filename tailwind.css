@@ -170,6 +170,32 @@
 
 :root {
   --animate-spin: spin 1s linear infinite;
+  --swiper-pagination-color: #101010;
+  --swiper-pagination-bullet-inactive-color: #999999;
+  --swiper-pagination-bullet-inactive-opacity: 0.4;
+  --swiper-pagination-bullet-size: 8px;
+  --swiper-pagination-bullet-horizontal-gap: 6px;
+}
+
+.cards-swiper {
+  padding-bottom: 48px !important;
+}
+
+.cards-swiper .swiper-pagination {
+  bottom: 0 !important;
+}
+
+.cards-swiper .swiper-pagination-bullet {
+  transition: all 0.3s ease;
+}
+
+.cards-swiper .swiper-pagination-bullet-active {
+  background: var(--swiper-pagination-color);
+}
+
+.cards-swiper .swiper-slide {
+  height: auto;
+  display: flex;
 }
 
 .animate-fade-in {
